@@ -1,3 +1,3 @@
 <template>
-    <h1>This is the users view</h1>
+    <p>Please enter your ID and click the button</p>
 </template>
