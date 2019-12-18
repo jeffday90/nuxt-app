@@ -9,6 +9,8 @@
       sm8
       md6
     >
+
+    <h1>Hello, This is jeff in the app now FUCK</h1>
       <div class="text-center">
         <logo />
         <vuetify-logo />
