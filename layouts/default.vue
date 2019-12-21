@@ -1,5 +1,6 @@
 <template>
-  <v-app dark>
+  <!-- <v-app dark>
+
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -24,6 +25,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
+
     <v-app-bar
       :clipped-left="clipped"
       fixed
@@ -85,11 +87,24 @@
     >
       <span>&copy; 2019</span>
     </v-footer>
-  </v-app>
+  </v-app> -->
+  <div>
+    <Header />
+    <nuxt />
+  </div>
 </template>
 
+<style>
+
+</style>
+
 <script>
+import Header from '~/components/Header.vue'
+
 export default {
+  components: {
+    Header
+  },
   data () {
     return {
       clipped: false,
@@ -105,7 +120,17 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'Inspire',
           to: '/inspire'
-        }
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Users',
+          to: '/users'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Products',
+          to: '/products'
+        },
       ],
       miniVariant: false,
       right: true,
