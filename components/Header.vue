@@ -33,4 +33,17 @@
         align-items: center;
         width: 80%;
     }
+
+    .nav-items a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav-items a:hover{
+        font-weight: bold;
+    }
+
+    .nav-items a:active{
+        color: black;
+    }
 </style>
